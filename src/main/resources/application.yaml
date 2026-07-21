@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/stockdb
-    username: postgres
-    password: stockpass123
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:stockpass123}
   jpa:
     hibernate:
       ddl-auto: update
