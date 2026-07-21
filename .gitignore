@@ -1,0 +1,11 @@
+target/
+.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+.nb-gradle/
+nbproject/private/
+nbactions.xml
+.idea/
+*.iml
+application-secrets.yml
+.env
