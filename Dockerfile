@@ -7,6 +7,7 @@ RUN mvn clean package -DskipTests
 
 # Étape 2 : image finale légère
 FROM eclipse-temurin:21-jre-alpine
+RUN apk update && apk upgrade --no-cache
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
